@@ -1,5 +1,6 @@
 package com.git.example;
 
+import com.git.example.entity.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +17,9 @@ public class SpringbootGitExApplication {
 	@GetMapping("/message")
 	public String print(){
 		return "git Example with sprint boot";
+	}
+	@GetMapping("/getUserDetails")
+	public User callUser(){
+		return new User();
 	}
 }
