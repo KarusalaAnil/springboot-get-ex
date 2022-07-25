@@ -23,4 +23,8 @@ public class SpringbootGitExApplication {
 	public User callUser(@PathVariable int id,@PathVariable String name){
 		return new User();
 	}
+	@GetMapping("/getUserDetails/{id}/{name}")
+	public User callUser1(@PathVariable int id,@PathVariable String name){
+		return new User();
+	}
 }
