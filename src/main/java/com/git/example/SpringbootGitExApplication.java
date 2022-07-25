@@ -18,8 +18,8 @@ public class SpringbootGitExApplication {
 	public String print(){
 		return "git Example with sprint boot";
 	}
-	@GetMapping("/getUserDetails")
-	public User callUser(){
+	@GetMapping("/getUserDetails/{id}")
+	public User callUser(@PathVariable int id){
 		return new User();
 	}
 }
